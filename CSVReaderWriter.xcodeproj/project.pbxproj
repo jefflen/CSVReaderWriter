@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4214F631E01B3D800365ECF /* CSVReaderWriter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4214F591E01B3D800365ECF /* CSVReaderWriter.framework */; };
+		E4214F681E01B3D800365ECF /* CSVReaderWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4214F671E01B3D800365ECF /* CSVReaderWriterTests.m */; };
+		E4214F6A1E01B3D800365ECF /* CSVReaderWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4214F5C1E01B3D800365ECF /* CSVReaderWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4214F641E01B3D800365ECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4214F501E01B3D700365ECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4214F581E01B3D700365ECF;
+			remoteInfo = CSVReaderWriter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4214F591E01B3D800365ECF /* CSVReaderWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSVReaderWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4214F5C1E01B3D800365ECF /* CSVReaderWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVReaderWriter.h; sourceTree = "<group>"; };
+		E4214F5D1E01B3D800365ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4214F621E01B3D800365ECF /* CSVReaderWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVReaderWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4214F671E01B3D800365ECF /* CSVReaderWriterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVReaderWriterTests.m; sourceTree = "<group>"; };
+		E4214F691E01B3D800365ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4214F551E01B3D700365ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4214F5F1E01B3D800365ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4214F631E01B3D800365ECF /* CSVReaderWriter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4214F4F1E01B3D600365ECF = {
+			isa = PBXGroup;
+			children = (
+				E4214F5B1E01B3D800365ECF /* CSVReaderWriter */,
+				E4214F661E01B3D800365ECF /* CSVReaderWriterTests */,
+				E4214F5A1E01B3D800365ECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4214F5A1E01B3D800365ECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4214F591E01B3D800365ECF /* CSVReaderWriter.framework */,
+				E4214F621E01B3D800365ECF /* CSVReaderWriterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4214F5B1E01B3D800365ECF /* CSVReaderWriter */ = {
+			isa = PBXGroup;
+			children = (
+				E4214F5C1E01B3D800365ECF /* CSVReaderWriter.h */,
+				E4214F5D1E01B3D800365ECF /* Info.plist */,
+			);
+			path = CSVReaderWriter;
+			sourceTree = "<group>";
+		};
+		E4214F661E01B3D800365ECF /* CSVReaderWriterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4214F671E01B3D800365ECF /* CSVReaderWriterTests.m */,
+				E4214F691E01B3D800365ECF /* Info.plist */,
+			);
+			path = CSVReaderWriterTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4214F561E01B3D700365ECF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4214F6A1E01B3D800365ECF /* CSVReaderWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E4214F581E01B3D700365ECF /* CSVReaderWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4214F6D1E01B3D800365ECF /* Build configuration list for PBXNativeTarget "CSVReaderWriter" */;
+			buildPhases = (
+				E4214F541E01B3D700365ECF /* Sources */,
+				E4214F551E01B3D700365ECF /* Frameworks */,
+				E4214F561E01B3D700365ECF /* Headers */,
+				E4214F571E01B3D700365ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSVReaderWriter;
+			productName = CSVReaderWriter;
+			productReference = E4214F591E01B3D800365ECF /* CSVReaderWriter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4214F611E01B3D800365ECF /* CSVReaderWriterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4214F701E01B3D800365ECF /* Build configuration list for PBXNativeTarget "CSVReaderWriterTests" */;
+			buildPhases = (
+				E4214F5E1E01B3D800365ECF /* Sources */,
+				E4214F5F1E01B3D800365ECF /* Frameworks */,
+				E4214F601E01B3D800365ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4214F651E01B3D800365ECF /* PBXTargetDependency */,
+			);
+			name = CSVReaderWriterTests;
+			productName = CSVReaderWriterTests;
+			productReference = E4214F621E01B3D800365ECF /* CSVReaderWriterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4214F501E01B3D700365ECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Hungju;
+				TargetAttributes = {
+					E4214F581E01B3D700365ECF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E4214F611E01B3D800365ECF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E4214F531E01B3D700365ECF /* Build configuration list for PBXProject "CSVReaderWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4214F4F1E01B3D600365ECF;
+			productRefGroup = E4214F5A1E01B3D800365ECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4214F581E01B3D700365ECF /* CSVReaderWriter */,
+				E4214F611E01B3D800365ECF /* CSVReaderWriterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4214F571E01B3D700365ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4214F601E01B3D800365ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4214F541E01B3D700365ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4214F5E1E01B3D800365ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4214F681E01B3D800365ECF /* CSVReaderWriterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4214F651E01B3D800365ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4214F581E01B3D700365ECF /* CSVReaderWriter */;
+			targetProxy = E4214F641E01B3D800365ECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4214F6B1E01B3D800365ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4214F6C1E01B3D800365ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4214F6E1E01B3D800365ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CSVReaderWriter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idv.Hungju.CSVReaderWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4214F6F1E01B3D800365ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CSVReaderWriter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idv.Hungju.CSVReaderWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E4214F711E01B3D800365ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CSVReaderWriterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idv.Hungju.CSVReaderWriterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4214F721E01B3D800365ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CSVReaderWriterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idv.Hungju.CSVReaderWriterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4214F531E01B3D700365ECF /* Build configuration list for PBXProject "CSVReaderWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4214F6B1E01B3D800365ECF /* Debug */,
+				E4214F6C1E01B3D800365ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4214F6D1E01B3D800365ECF /* Build configuration list for PBXNativeTarget "CSVReaderWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4214F6E1E01B3D800365ECF /* Debug */,
+				E4214F6F1E01B3D800365ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4214F701E01B3D800365ECF /* Build configuration list for PBXNativeTarget "CSVReaderWriterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4214F711E01B3D800365ECF /* Debug */,
+				E4214F721E01B3D800365ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4214F501E01B3D700365ECF /* Project object */;
+}
