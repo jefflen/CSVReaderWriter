@@ -10,6 +10,8 @@
 
 // - Changed all the true/false statements to the Objective-C YES/NO
 
+// - Aligned the coding style convention
+
 // - Defined global consts for easy management.
 
 static NSString * const TabCharacter = @"\t";
