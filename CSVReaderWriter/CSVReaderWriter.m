@@ -13,19 +13,23 @@
 // - Defined global consts for easy management.
 
 static NSString * const TabCharacter = @"\t";
-static NSString * const NewLineCharacter = @"\n";
+static unsigned char const NewLineCharacter = '\n';
 
 static NSString * const UnknownFileModeExceptionName = @"UnknownFileModeException";
+static NSString * const UnknownFileModeExceptionNameDescription = @"Unknown file mode exception name";
 static NSString * const UnknownFileModeExceptionReason = @"Unknown file mode specified";
+static NSString * const UnknownFileModeExceptionReasonDescription = @"Unknown file mode exception reason";
 
-static NSString * const FileNotOpenedModeExceptionName = @"FileNotOpenedModeException";
-static NSString * const FileNotOpenedModeExceptionReason = @"Please invoke open:mode: to open the file first";
+static NSString * const FileNotOpenedExceptionName = @"FileNotOpenedException";
+static NSString * const FileNotOpenedExceptionNameDescription = @"File not opened exception name";
+static NSString * const FileNotOpenedExceptionReason = @"Please invoke open:mode: to open the file first";
+static NSString * const FileNotOpenedExceptionReasonDescription = @"File not opened exception description";
 
 // - Created a interface to declar ivars for aligning the
 //   coding convention nowadays.
 @interface CSVReaderWriter () {
-    NSInputStream* inputStream;
-    NSOutputStream* outputStream;
+    NSInputStream *inputStream;
+    NSOutputStream *outputStream;
 }
 @end
 
@@ -49,9 +53,9 @@ static NSString * const FileNotOpenedModeExceptionReason = @"Please invoke open:
         }
         default:{
             // - Added NSLocalizedString for future localisation use
-            NSException* ex = [NSException exceptionWithName:NSLocalizedString(UnknownFileModeExceptionName, nil)
-                                                      reason:NSLocalizedString(UnknownFileModeExceptionReason, nil)
-                                                    userInfo:nil];
+            NSString *name = NSLocalizedString(UnknownFileModeExceptionName, UnknownFileModeExceptionNameDescription);
+            NSString *reason = NSLocalizedString(UnknownFileModeExceptionReason, UnknownFileModeExceptionReasonDescription);
+            NSException *ex = [NSException exceptionWithName:name reason:reason userInfo:nil];
             @throw ex;
             break;
         }
@@ -60,20 +64,21 @@ static NSString * const FileNotOpenedModeExceptionReason = @"Please invoke open:
 
 #pragma mark - Reader
 
-- (NSString*)readLine {
+- (NSString *)readLine {
     // - Checked if the stream is opened or will throws an exception.
     if (![self streamIsOpened:inputStream]) {
-        NSException* ex = [NSException exceptionWithName:NSLocalizedString(FileNotOpenedModeExceptionName, nil)
-                                                  reason:NSLocalizedString(FileNotOpenedModeExceptionReason, nil)
-                                                userInfo:nil];
+        NSString *name = NSLocalizedString(FileNotOpenedExceptionName, FileNotOpenedExceptionNameDescription);
+        NSString *reason = NSLocalizedString(FileNotOpenedExceptionReason, FileNotOpenedExceptionReasonDescription);
+        NSException *ex = [NSException exceptionWithName:name reason:reason userInfo:nil];
         @throw ex;
     }
     
     uint8_t ch = 0;
-    NSMutableString* str = [NSMutableString string];
+    NSMutableString *str = [NSMutableString string];
     while ([inputStream read:&ch maxLength:1] == 1) {
-        if (ch == '\n')
+        if (ch == NewLineCharacter) {
             break;
+        }
         [str appendFormat:@"%c", ch];
     }
     return str;
@@ -125,19 +130,17 @@ static NSString * const FileNotOpenedModeExceptionReason = @"Please invoke open:
 - (void)writeLine:(NSString*)line {
     // - Checked if the stream is opened or will throws an exception.
     if (![self streamIsOpened:outputStream]) {
-        NSException* ex = [NSException exceptionWithName:NSLocalizedString(FileNotOpenedModeExceptionName, nil)
-                                                  reason:NSLocalizedString(FileNotOpenedModeExceptionReason, nil)
-                                                userInfo:nil];
+        NSString *name = NSLocalizedString(FileNotOpenedExceptionName, FileNotOpenedExceptionNameDescription);
+        NSString *reason = NSLocalizedString(FileNotOpenedExceptionReason, FileNotOpenedExceptionReasonDescription);
+        NSException *ex = [NSException exceptionWithName:name reason:reason userInfo:nil];
         @throw ex;
     }
     
-    NSData* data = [line dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *lineToWrite = [NSString stringWithFormat:@"%@%c", line, NewLineCharacter];
+    NSData *data = [lineToWrite dataUsingEncoding:NSUTF8StringEncoding];
     
-    const void* bytes = [data bytes];
+    const void *bytes = [data bytes];
     [outputStream write:bytes maxLength:[data length]];
-    
-    unsigned char* lf = (unsigned char*)[NewLineCharacter cStringUsingEncoding:NSUTF8StringEncoding];
-    [outputStream write: lf maxLength: 1];
 }
 
 - (void)write:(NSArray*)columns {
