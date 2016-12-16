@@ -33,6 +33,7 @@
 		E4214F691E01B3D800365ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E449E3AF1E02E99300EBA1AD /* CSVReaderWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVReaderWriter.m; sourceTree = "<group>"; };
 		E449E3B31E04351E00EBA1AD /* Sample-Spreadsheet-5000-rows.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sample-Spreadsheet-5000-rows.csv"; sourceTree = "<group>"; };
+		E449E3B51E043FD300EBA1AD /* AnnotatedLegacyCSVReaderWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnotatedLegacyCSVReaderWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 			children = (
 				E4214F5C1E01B3D800365ECF /* CSVReaderWriter.h */,
 				E449E3AF1E02E99300EBA1AD /* CSVReaderWriter.m */,
+				E449E3B51E043FD300EBA1AD /* AnnotatedLegacyCSVReaderWriter.m */,
 				E4214F5D1E01B3D800365ECF /* Info.plist */,
 			);
 			path = CSVReaderWriter;
