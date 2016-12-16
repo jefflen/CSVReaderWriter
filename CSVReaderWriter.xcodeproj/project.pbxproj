@@ -10,6 +10,8 @@
 		E4214F631E01B3D800365ECF /* CSVReaderWriter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4214F591E01B3D800365ECF /* CSVReaderWriter.framework */; };
 		E4214F681E01B3D800365ECF /* CSVReaderWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4214F671E01B3D800365ECF /* CSVReaderWriterTests.m */; };
 		E4214F6A1E01B3D800365ECF /* CSVReaderWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4214F5C1E01B3D800365ECF /* CSVReaderWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E449E3B01E02E99300EBA1AD /* CSVReaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E449E3AF1E02E99300EBA1AD /* CSVReaderWriter.m */; };
+		E449E3B41E04351E00EBA1AD /* Sample-Spreadsheet-5000-rows.csv in Resources */ = {isa = PBXBuildFile; fileRef = E449E3B31E04351E00EBA1AD /* Sample-Spreadsheet-5000-rows.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		E4214F621E01B3D800365ECF /* CSVReaderWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVReaderWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4214F671E01B3D800365ECF /* CSVReaderWriterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVReaderWriterTests.m; sourceTree = "<group>"; };
 		E4214F691E01B3D800365ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E449E3AF1E02E99300EBA1AD /* CSVReaderWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVReaderWriter.m; sourceTree = "<group>"; };
+		E449E3B31E04351E00EBA1AD /* Sample-Spreadsheet-5000-rows.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sample-Spreadsheet-5000-rows.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E4214F5C1E01B3D800365ECF /* CSVReaderWriter.h */,
+				E449E3AF1E02E99300EBA1AD /* CSVReaderWriter.m */,
 				E4214F5D1E01B3D800365ECF /* Info.plist */,
 			);
 			path = CSVReaderWriter;
@@ -81,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				E4214F671E01B3D800365ECF /* CSVReaderWriterTests.m */,
+				E449E3B31E04351E00EBA1AD /* Sample-Spreadsheet-5000-rows.csv */,
 				E4214F691E01B3D800365ECF /* Info.plist */,
 			);
 			path = CSVReaderWriterTests;
@@ -147,10 +153,12 @@
 				TargetAttributes = {
 					E4214F581E01B3D700365ECF = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RNP7AH998X;
 						ProvisioningStyle = Automatic;
 					};
 					E4214F611E01B3D800365ECF = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RNP7AH998X;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -185,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E449E3B41E04351E00EBA1AD /* Sample-Spreadsheet-5000-rows.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E449E3B01E02E99300EBA1AD /* CSVReaderWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +327,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RNP7AH998X;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -335,6 +347,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RNP7AH998X;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -350,6 +363,7 @@
 		E4214F711E01B3D800365ECF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RNP7AH998X;
 				INFOPLIST_FILE = CSVReaderWriterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = idv.Hungju.CSVReaderWriterTests;
@@ -360,6 +374,7 @@
 		E4214F721E01B3D800365ECF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RNP7AH998X;
 				INFOPLIST_FILE = CSVReaderWriterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = idv.Hungju.CSVReaderWriterTests;
@@ -386,6 +401,7 @@
 				E4214F6F1E01B3D800365ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4214F701E01B3D800365ECF /* Build configuration list for PBXNativeTarget "CSVReaderWriterTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +410,7 @@
 				E4214F721E01B3D800365ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
